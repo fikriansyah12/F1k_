@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #032e1d;
+      }
+
+      .login-container {
+        background-color: #d30505;
+        border: 1px solid #a13939;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(182, 114, 114, 0.1);
+        display: flex;
+      }
+
+      .image-container {
+        padding: 10px;
+      }
+
+      .image-container img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 50px;
+      }
+
+      .form-container {
+        padding: 20px;
+        max-width: 400pt;
+        margin: auto;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 100px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .form-container {
+          right: -250px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .login-container {
+          right: -250px;
+        }
+      }
+
+      label {
+        margin-bottom: 5px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+
+      input {
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #db0404;
+        border-radius: 50px;
+        background-color: aqua;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #ecd9d9;
+        color: #ff0000;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+    </style>
+
+    <div class="login-container">
+      <div class="image-container">
+        <img src="images.jpg" alt="Gambar" />
+      </div>
+      <div class="form-container">
+        <form>
+          <label for="username">Gmail</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Login</button>
+        </form>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
